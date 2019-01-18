@@ -1,31 +1,63 @@
 <!DOCTYPE html>
+<!-- The main language of the page declared to english (en). If it's spanish, it'd be lang="es" -->
 <html lang="en">
   <head>
     <!-- Meta Tags -->
     <title>TITLE GOES HERE</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- a viewport declaration which does not disable zooming -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Enter a brief description." />
     <meta name="author" content="Enter your name here" />
 
-    <!-- Linked CSS Stylesheet -->
-    <link rel="stylesheet" type="text/css" href="PATHHERE" />
+    <!-- Linked CSS stylesheet with a non-blocking stylesheet -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"
+          media="none" onload="if(media!='all')media='all'" />
+    <noscript><link rel="stylesheet" href="assets/style.css"></noscript>
   </head>
   <body>
     <!--
-      Note: This is just 1 example of a basic start to an HTML hierarchy.
+      Note: This is just one example of a basic start to an HTML hierarchy.
       There are numerous ways to order and structure these initial elements,
-      as well as what ever elements you write inside of them.
+      as well as whatever elements you write inside of them. However, for most
+      of us, this template will help you foster an initial approach to a website.
     -->
+    <!--
+      A "skip link" for keyboard users.
+      You will hide it with CSS for visually-abled users.
+    -->
+    <a href="#main" id="skip-link">skip to main content</a>
     <nav>
-
+      <!-- nav elements go within a semantic nav element -->
+      <ul>
+        <li>
+          <a href="#">Link 1</a>
+        </li>
+        <li>
+          <a href="#">Link 2</a>
+        </li>
+        <li>
+          <a href="#">Link 3</a>
+        </li>
+        <li>
+          <a href="#">Link 4</a>
+        </li>
+      </ul>
     </nav>
     <header>
-
+      <!--
+        - H1 tags are typically reserved for the title of a page.
+        - The title should go before any content.
+        - Keyboard/screen reader users might use the keyboard key "h" to skip to the first heading.
+        - If any content is placed before this, it will be bypassed
+      -->
+      <h1>Title Here</h1>
     </header>
-    <main>
-
+    <main id="#main">
+      <p>
+        Test paragraph.
+      </p>
     </main>
     <footer>
 

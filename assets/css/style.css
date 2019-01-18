@@ -1,0 +1,58 @@
+/*===================
+  style.css
+
+  Add, remove, revise the index and comments as necessary.
+
+  Index
+  - Import Fonts
+  - General
+  - Typography
+  - Grid
+  - Header
+  - Footer
+
+  ==================== */
+
+/* ===================
+   Import fonts
+   =================== */
+
+
+/* ===================
+   General styles
+   =================== */
+
+/*
+  - Selects the href attribute with the #main ID
+  - Hides the skip Links for accessbility
+    / keyboard users */
+[href="#main"] {
+   position: absolute;
+   top: 0;
+   right: 100%; /* moves off screen */
+}
+[href="#main"]:focus {
+   right: auto;
+}
+
+/* ===================
+   Typography scheme
+   =================== */
+
+/* Responsive font declaration. */
+html { font-size: calc(1em + 1vw); }
+
+
+/* ===================
+   Grid styles
+   =================== */
+
+
+/* ===================
+   Header styles
+   =================== */
+
+
+/* ===================
+   Footer styles
+   =================== */
